@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+        .hobbies{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            头像 <button>选择文件</button> 未选择任何文件<br/>
+            昵称 <input type="text" style="height: 30px;" ><br/>
+            学历 <select>
+                <option value>大专</option>
+                <option value>本科</option>
+            </select><br/>
+            性别<input type="radio" id="male" checked value="male" name="select">
+            <label for="male">男</label>
+            <input type="radio" value="female" name="select">
+            <label for="female">女</label><br>
+            爱好<div class="hobbies"><input type="checkbox" checked="checked"  id="film" name="hobbie" value="film">
+            <label for="film">电影</label>
+            <input type="checkbox"  id="photos" name="hobbie" value="photos">
+            <label for="photos">摄影</label><br>
+            <input type="checkbox" id="music" name="hobbie" value="music">
+            <label for="music">音乐</label>
+            <input type="checkbox"checked="checked" id="read" name="hobbie" value="read">
+            <label for="read">阅读</label></div>
+            签名<input type="text" style="height: 50px;"
+        </form>
+
+    </div>
+</body>>
+</html>

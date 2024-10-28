@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gainsboro;
+        }
+
+        .header {
+            background-color: white;
+            position: relative;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .quit {
+            background-color: rgb(109, 235, 207);
+            width: 80px;
+            height: 30px;
+            text-align: center;
+        }
+
+        p {
+            color: rgb(109, 235, 207);
+        }
+
+        .one {
+            display: flex;
+        }
+
+        .picture {
+            position: relative;
+            left: 230px;
+        }
+
+        .content {
+            position: absolute;
+            left: 230px;
+            background-color: white;
+            width: 1200px;
+            height: 330px;
+            top: 560px;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 20px;
+        }
+
+        .circle1 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            display: grid;
+        }
+
+        .circle1:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .circle2:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .circle3:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .circle4:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .circle2 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            display: grid;
+        }
+
+        .circle3 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            display: grid;
+        }
+
+        .circle4 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            display: grid;
+        }
+
+        span {
+            place-content: center;
+        }
+
+        .uls {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 20px;
+        }
+
+        .round {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 20px;
+            color: rgb(109, 235, 207);
+            font-size: x-large;
+        }
+
+        .round1 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .round2 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .round3 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .round4 {
+            border: 2px solid rgb(109, 235, 207);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+
+        .content2 {
+            position: absolute;
+            left: 230px;
+            background-color: white;
+            width: 1200px;
+            height: 450px;
+            top: 910px;
+        }
+
+        h4 {
+            position: relative;
+            left: 550px;
+        }
+
+        .ect {
+            position: relative;
+            left: 483px;
+        }
+
+        li:hover {
+            color: red;
+        }
+
+        .tables {
+            display: flex;
+            justify-content: center;
+        }
+
+        .table1 {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(109, 235, 207);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table2 {
+            width: 200px;
+            height: 150px;
+            font-size: 80px;
+            text-align: center;
+            color: rgb(235, 107, 107);
+        }
+
+        .table3 {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(109, 235, 207);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table4 {
+            width: 200px;
+            height: 150px;
+            font-size: 80px;
+            text-align: center;
+            color: rgb(235, 107, 107);
+        }
+
+        .table5 {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(109, 235, 207);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tables2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .table7 {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(109, 235, 207);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table6 {
+            width: 200px;
+            height: 150px;
+            font-size: 80px;
+            text-align: center;
+            color: rgb(235, 107, 107);
+        }
+
+        .table9 {
+            width: 200px;
+            height: 150px;
+            border: 2px solid rgb(109, 235, 207);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table8 {
+            width: 200px;
+            height: 150px;
+            font-size: 80px;
+            text-align: center;
+            color: rgb(235, 107, 107);
+        }
+
+        .table10 {
+            width: 200px;
+            height: 150px;
+            font-size: 80px;
+            text-align: center;
+            color: rgb(235, 107, 107);
+        }
+
+        .table1:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table2:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table3:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table4:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table5:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table6:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table7:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table8:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table9:hover {
+            background-color: rgb(0, 141, 106);
+        }
+
+        .table10:hover {
+            background-color: rgb(0, 141, 106);
+        }
+        .content3 {
+            position: absolute;
+            left: 230px;
+            background-color: white;
+            width: 1200px;
+            height: 450px;
+            top: 1380px;
+        }
+        .tables3 {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .table11 {
+            width: 220px;
+            height: 150px;
+            background-color: rgb(235, 107, 107);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            position: relative;
+        }
+        .table12 {
+            width: 220px;
+            height: 150px;
+            background-color: rgb(235, 107, 107);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            position: relative;
+        }
+        .table13 {
+            width: 220px;
+            height: 150px;
+            background-color: rgb(235, 107, 107);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            position: relative;
+        }
+        .table14 {
+            width: 220px;
+            height: 150px;
+            background-color: rgb(235, 107, 107);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            position: relative;
+            
+        }
+        .table11:hover{
+            background-color: rgb(231, 44, 44);
+        }
+        .table12:hover>.hidden-image{
+            opacity: 1;
+            animation: slideInDown 0.5s ease forwards;
+
+        }
+        .table13:hover>.hidden-image{
+            opacity: 1;
+            animation: slideInDown 0.5s ease forwards;
+
+        }
+        .table14:hover>.hidden-image{
+            opacity: 1;
+            animation: slideInDown 0.5s ease forwards;
+
+        }
+        .table11:hover>.hidden-image{
+            opacity: 1;
+            animation: slideInDown 0.5s ease forwards;
+
+        }
+        .table12:hover{
+            background-color: rgb(231, 44, 44);
+        }
+        .table13:hover{
+            background-color: rgb(231, 44, 44);
+        }
+        .table14:hover{
+            background-color: rgb(231, 44, 44);
+        }
+        .hidden-image{
+            position: absolute;
+            top: -40px;
+            opacity:0 ;
+            transition: all 0.5s ease;
+            
+        }
+        .footer{
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(38, 35, 35);
+            text-align: center;
+            top: 1900px;
+            color: white;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="one"><img src="./07856D7ABA636EEC4A473FE65A8156A9.png">
+                <p>学而</p>
+            </div>
+            <div>首页</div>
+            <div>分类查看</div>
+            <div><img src="./屏幕截图 2024-10-22 185242.png" width="200px" height="30px"></div>
+            <div><img src="./A2BE3754744307FA4761FD879DC82CF5.png"></div>
+            <div class="quit">退出</div>
+        </div>
+        <div class="picture">
+            <img src="./93B3E37D217F23FF7763518F0AFDF7D7.png" width="1200px" height="500px">
+        </div>
+        <div class="content">
+            <div class="circle">
+                <div class="circle1"><span>公</span></div>
+                <div class="circle2"><span>通</span></div>
+                <div class="circle3"><span>素</span></div>
+                <div class="circle4"><span>专</span></div>
+            </div>
+            <div class="uls">
+                <div class="ul1">
+                    <ul>
+                        <li><span>界面与设计应用</span><br><small>房子</small></li>
+                        <li><span>java程序编程</span><br><small>赵三金</small></li>
+                        <li><span>设计师的自我修养</span><br><small>分享课程</small></li>
+                    </ul>
+                </div>
+                <div class="ul1">
+                    <ul>
+                        <li><span>计算机基础</span><br><small>胡薇</small></li>
+                        <li><span>植物观赏学基础</span><br><small>韩一尾</small></li>
+                        <li><span>生活常识101</span><br><small>分享</small></li>
+                    </ul>
+                </div>
+                <div class="ul1">
+                    <ul>
+                        <li><span>新生引导课堂</span><br><small>开学季</small></li>
+                        <li><span>党课精神研讨课</span><br><small>分享课程</small></li>
+                        <li><span>专业方向</span><br><small>毕业生</small></li>
+                    </ul>
+                </div>
+                <div class="ul1">
+                    <ul>
+                        <li><span>影视广告摄影基础</span><br><small>分享课程</small></li>
+                        <li><span>程序员的养成</span><br><small>赵多金</small></li>
+                        <li><span>如何让设计师改稿</span><br><small>甲方</small></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="round">
+                <div class="round1">十</div>
+                <div class="round2">十</div>
+                <div class="round3">十</div>
+                <div class="round4">十</div>
+            </div>
+        </div>
+        <div class="content2">
+            <div>
+                <h4>最热课程动态</h4>
+            </div>
+            <div class="ect">
+                <p>精心为您推荐最佳口碑NO.1-NO.5</p>
+            </div>
+            <div class="tables">
+                <div class="table1">
+                    <span>常勇</span>
+                    <span>《化学生活》</span>
+                </div>
+                <div class="table2"><u>02</u></div>
+                <div class="table3"><span>张勇</span><span>《java语言程序设计》</span></div>
+                <div class="table4"><u>04</u></div>
+                <div class="table5"><span>张国</span><span>《计算机组装》</span></div>
+            </div>
+            <div class="tables2">
+                <div class="table6"><u>01</u></div>
+                <div class="table7"><span>李达</span><span>《大学生语文》</span></div>
+                <div class="table8"><u>03</u></div>
+                <div class="table9"><span>苏燕</span><span>《视觉语言》</span></div>
+                <div class="table10"><u>05</u></div>
+            </div>
+        </div>
+        <div class="content3">
+            <div><h4>猜你喜欢课程</h4></div>
+            <div class="ect"><p>根据您的浏览记录，推荐相似课程列表</p></div>
+            <div class="tables3">
+                <div>
+                   <div class="table11"><span>《毛泽东思想》</span><span>赵三金</span>
+                   <img src="./8046C9626565154D88EA200493A5EB35.png" class="hidden-image"></div>
+                </div>
+                <div>
+                   <div class="table12"><span>《邓小平理论》</span><span>胡一薇</span>
+                   <img src="./8046C9626565154D88EA200493A5EB35.png" class="hidden-image"></div>
+                </div>
+                <div>
+                   <div class="table13"><span>《科学发展观》</span><span>梁非凡</span>
+                   <img src="./8046C9626565154D88EA200493A5EB35.png" class="hidden-image"></div>
+                </div>
+                <div>
+                   <div class="table14"><span>《三个代表》</span><span>韩一尾</span>
+                   <img src="./8046C9626565154D88EA200493A5EB35.png" class="hidden-image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><img src="./E538D250E7C86B38752266E8E2A3E0BE.png"><br><span>MUXI STUDIO 华中师范大学木犀团队</span></div>
+    </div>
+</body>
+
+</html> 
